@@ -10,8 +10,8 @@
 const counter = 1
 
 const added = counter + 1
-// counter =&gt; 1
-// added =&gt; 2
+// counter => 1
+// added => 2
 ```
 
 ### Functions
@@ -25,51 +25,51 @@ function functionName(arguments) {}
 #### arrow function syntax
 
 ```javascript=
-const functionName = (arguments) =&gt; {}
+const functionName = (arguments) => {}
 ```
 
 #### object &amp; array
 
 ```javascript=
-const object = { &#34;alpha&#34;: &#34;a&#34;, &#34;beta&#34;: &#34;b&#34; }
-// object.alpha =&gt; &#34;a&#34;
-// object[&#34;beta&#34;] =&gt; &#34;b&#34;
+const object = { "alpha": "a", "beta": "b" }
+// object.alpha => "a"
+// object["beta"] => "b"
 
-const array = [ &#34;alpha&#34;, &#34;beta&#34; ]
-// array[0] = &#34;alpha&#34;
-// array[1] = &#34;beta&#34;
+const array = [ "alpha", "beta" ]
+// array[0] = "alpha"
+// array[1] = "beta"
 ```
 
 #### deconstruction
 
 ```javascript=
-const { alpha, beta } = { &#34;alpha&#34;: &#34;a&#34;, &#34;beta&#34;: &#34;b&#34; }
-// alpha =&gt; &#34;a&#34;
-// beta =&gt; &#34;b&#34;
+const { alpha, beta } = { "alpha": "a", "beta": "b" }
+// alpha => "a"
+// beta => "b"
 
-const [ alpha, beta ] = [ &#34;alpha&#34;, &#34;beta&#34; ]
-// alpha =&gt; &#34;alpha&#34;
-// beta =&gt; &#34;beta&#34;
+const [ alpha, beta ] = [ "alpha", "beta" ]
+// alpha => "alpha"
+// beta => "beta"
 ```
 
 ### `export` &amp; `import`
 
 ```javascript=
 // default exports
-import React from &#39;react&#39;
+import React from 'react'
 
 // to use it
 React.createElement()
 
-export default () =&gt; {} // name is not important
+export default () => {} // name is not important
 
 // named exports
-import { createElement } from &#39;react&#39;
+import { createElement } from 'react'
 
 // to use it
 createElement()
 
-export const Component = () =&gt; {}
+export const Component = () => {}
 ```
 
 
@@ -81,23 +81,23 @@ export const Component = () =&gt; {}
 ### JSX
 
 ```jsx=
-const variable = &#39;hello&#39;
+const variable = 'hello'
 
-&lt;View prop1={props.prop1}&gt;
-    &lt;Text&gt;Some Text&lt;/Text&gt;
+<View prop1={props.prop1}>
+    <Text>Some Text</Text>
     
-    &lt;Text&gt;Use a variable like {variable}.&lt;/Text&gt;
-&lt;/View&gt;
+    <Text>Use a variable like {variable}.</Text>
+</View>
 ```
 
 ### Hooks
 
 ```jsx=
-const Component = (props) =&gt; {
+const Component = (props) => {
     return (
-        &lt;View prop1={props.prop1}&gt;
-            &lt;Text&gt;Some Text&lt;/Text&gt;
-        &lt;/View&gt;
+        <View prop1={props.prop1}>
+            <Text>Some Text</Text>
+        </View>
     )
 }
 ```
@@ -107,19 +107,19 @@ const Component = (props) =&gt; {
 ```javascript=
 const [currentState, setState] = React.useState(false)
 
-// currentState =&gt; false
+// currentState => false
 // setState(true)
-// currentState =&gt; true
+// currentState => true
 ```
 
 ```jsx=
-const Component = (props) =&gt; {
+const Component = (props) => {
     const [currentState, setState] = React.useState(false)
     
     return (
-        &lt;View show={currentState}&gt;
-            &lt;Text&gt;Some Text&lt;/Text&gt;
-        &lt;/View&gt;
+        <View show={currentState}>
+            <Text>Some Text</Text>
+        </View>
     )
 }
 ```
@@ -136,9 +136,9 @@ const Component = (props) =&gt; {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: &#39;#fff&#39;,
-    alignItems: &#39;center&#39;,
-    justifyContent: &#39;center&#39;,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 })
 ```
